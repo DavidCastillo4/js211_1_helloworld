@@ -13,10 +13,14 @@ let n = '123';
 console.log('#3 Convert string to number: '+parseInt(n))
 
 
-let myBool=true,myUndefined,myNum=123,myString='abc'
-let arr=[myBool,myUndefined,myNum,myString]
+let myBool=true,myUndefined,myNum=123,myString='abc',myNan=parseInt(myString)
+
+let arr=[myBool,myUndefined,myNum,myString,myNan]
+
+console.log('#4 '+myNan)
 
 arr.forEach(function(val,i){   
+  
   console.log('#4 '+typeof val)  
 });
 
